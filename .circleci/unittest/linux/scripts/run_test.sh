@@ -12,7 +12,6 @@ eval "$(./conda/bin/conda shell.bash hook)"
 conda activate ./env
 
 python -m torch.utils.collect_env
-export TORCHAUDIO_TEST_FAIL_IF_NO_EXTENSION=1
 export PATH="${PWD}/third_party/install/bin/:${PATH}"
 
 if [ "${os}" == MacOSX ] ; then
